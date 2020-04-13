@@ -1,12 +1,12 @@
-package graph;
+package org.aosabook.dagoba.graph;
 
 public class Edge {
     private Vertex inVertex;
     private Vertex outVertex;
 
-    private Edge(Vertex fromVertex, Vertex toVertex) {
-        this.inVertex = fromVertex;
-        this.outVertex = toVertex;
+    private Edge(Vertex inVertex, Vertex outVertex) {
+        this.inVertex = inVertex;
+        this.outVertex = outVertex;
     }
 
     public static Edge createInstance(Vertex inVertex, Vertex outVertex) {
